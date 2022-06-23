@@ -7,8 +7,8 @@ public class CalculatorTest {                   // kalkulatora testesana
     public void testSum() {
         Calculator calculator = new Calculator();
 //        calculator.sum(10.00, 25.00);                        // objektam "calculator" metodes caur (.) sum, minus, multiply, divide
-        Assert.assertEquals(calculator.sum(10.00, 25.00), 35, "Incorrect result. Please check method implementation");    // x+y - Actual, parbauda, vai vienads ar expected
-// Assert.assertEquals - metode, kas salidzina rezultatus
+        Assert.assertEquals(calculator.sum(10.00, 25.00), 35, "Incorrect result. Please check method implementation");
+// Assert.assertEquals - metode, kas salidzina rezultatus ACTUAL vs EXPECTED
     }
 
     @Test
@@ -28,6 +28,4 @@ public class CalculatorTest {                   // kalkulatora testesana
         Calculator calculator = new Calculator();
         Assert.assertEquals(calculator.divide(30.00, 10.00), 3);
     }
-
-
 }
